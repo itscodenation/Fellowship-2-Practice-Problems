@@ -1,2 +1,11 @@
-# Fellowship-2-Practice-Problems
-A repository containing Do Now and Guided Practice questions for CN students in Fellowship 2.
+# 3.5 Do Now
+
+## Do this first
+
+1. Run `npm install`
+2. Run `npm start`
+3. Open Visual Studio Code to this folder
+
+## The assignment - what you need to do
+
+1. Make the clock say hello to you instead of the world.
