@@ -7,3 +7,6 @@ class DecreaseCounterButton extends React.Component {
     );
   }
 }
+
+// Remove me
+export {DecreaseCounterButton};
