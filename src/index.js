@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <Clock
-        name={'your name'}  
+        name={'me'}  
       />
     );
   }
@@ -16,7 +16,7 @@ class Clock extends React.Component {
     const date=new Date();
     return (
       <div>
-        <h1>Hello, world!</h1>
+        <h1>Hello, {this.props.name}!</h1>
         <h2>It is {date.toLocaleTimeString()}.</h2>
       </div>
     );
