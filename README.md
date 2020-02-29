@@ -35,7 +35,7 @@ Rather than uploading the working code and making you, the reader, figure out th
 
 1. No Closing tag for DecreaseCounterButton on line 36 in index.js
 2. No export statement in DecreaseButtonComponent.
-3. Index.js is missing an import for DecreaseCounterButton
+3. Index.js is missing import statements for DecreaseCounterButton and Counter.
 
 ## Functionality Errors:
 

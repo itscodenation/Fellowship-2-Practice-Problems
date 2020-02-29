@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { IncreaseCounterButton } from './increase_counter_button';
+import { DecreaseCounterButton } from './decrease_counter_button';
+import { CounterDisplay } from './counter';
 
 class App extends React.Component {
   globalCounter = 0;
@@ -9,7 +11,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      count: 10
+      count: this.globalCounter
     };
   }
 
@@ -31,9 +33,7 @@ class App extends React.Component {
     return (
       <div>
         <IncreaseCounterButton handleClick={() => this.increaseCounter()} />
-        <DecreaseCounterButton handleClick={() => this.decreaseCounter()}
-
-
+        <DecreaseCounterButton handleClick={() => this.decreaseCounter()} />
         <CounterDisplay number={this.state.count}/>
       </div>
     )
