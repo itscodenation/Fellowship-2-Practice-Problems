@@ -16,9 +16,9 @@ class App extends React.Component {
 
   changeBackgroundColor() {
     let rand = Math.random()
-    this.setState({
+    this.state = {
       className : this.backgroundColors[Math.floor(rand * this.backgroundColors.length)]
-    })
+    }
   }
 
   render() {
