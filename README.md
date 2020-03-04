@@ -1,4 +1,4 @@
-# 3.6 Debugging Practice
+# 3.7 Debugging Practice
 
 ## Do this first
 
