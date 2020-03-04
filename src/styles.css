@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+  color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.orange {
+  background-color: orange;
+  width: 300px;
+  height: 200px;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 300px;
+  height: 200px;
+}
+
+.green {
+  background-color: green;
+  color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.indigo {
+  background-color: indigo;
+  color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.violet {
+  background-color: violet;
+  width: 300px;
+  height: 200px;
+}
