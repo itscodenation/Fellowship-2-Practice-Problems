@@ -1,31 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {data} from './data';
+import {Post} from './post';
 
-import './styles.css';
+const rootStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+};
 
 class App extends React.Component {
-  backgroundColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      className : 'red'
-    };
-  }
-
-  changeBackgroundColor() {
-    let rand = Math.random()
-    this.state = {
-      className : this.backgroundColors[Math.floor(rand * this.backgroundColors.length)]
-    }
-  }
-
+ 
   render() {
-    return (
-      <div className={this.state.className} onClick={() => this.changeBackgroundColor()}>Click me to change color!</div>
-    )
+    // This looks like a great example for how to use Array.map() to 
+    // create a component.
+    return <div style={rootStyle}>
+    {data.map((post) => {
+      return <Post data={post}></Post>
+    })}
+  </div>;
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App/>, document.getElementById("root"));
